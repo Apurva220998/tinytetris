@@ -1,0 +1,22 @@
+{
+    "tasks": [
+           {
+            "label": "Build TinyTetris",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "tinytetris.cpp",
+                "-o",
+                "tinytetris",
+                "-lncurses"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile TinyTetris with ncurses"
+        }
+    ],
+    "version": "2.0.0"
+}
